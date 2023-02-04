@@ -26,3 +26,21 @@ yarn create next-app blog --example "https://github.com/vercel/next-learn/tree/m
 - Lazy load(viewport에 들어오면 로드)
 - 그외 optimization(webp 형태)
 - CLS(Cumulative Layout Shift) : 누적 레이아웃 이동
+
+### SSG를 사용하면 좋은 페이지(정적인 페이지)
+
+- Marketing pages
+- Blog posts
+- E-commerce product listings
+- Help and documentation
+
+#### 적용여부 선택 기준
+
+- 사용자가 페이지를 요청하기 전에 pre-render 할 수 있는가?
+  - yes라면 SSG
+  - no라면 SSR 혹은 ISR 혹은 CSR
+
+#### SSG의 2가지 케이스
+
+- 외부 데이터(다른 파일, API, DB 등) 없이 pre-rendering
+- 외부 데이터(다른 파일, API, DB 등)를 가져와서 pre-rendering
